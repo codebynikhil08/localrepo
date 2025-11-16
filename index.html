@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Localrepo</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <form action="/submit" method="POSt"></form>
+    <form action="/submit" method="POST">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter Your name " required>
+        </div>
+        <div>
+            <label for="ph">Number</label>
+            <input id="phone" type="tel" placeholder="Enter your number" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your mail" required>
+
+        </div>
+        <div>
+            <label for="dob">Date-Of-Birth</label>
+            <input type="date" placeholder="Enter Your DOB " required>
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+            <select id="gender" required>
+                <option value="" disabled selected>Select Your Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="none">None</option>
+            </select>
+
+        </div>
+        <div>
+            <input id="terms" type="checkbox" required>
+            <label for="terms">I agree to the terms and conditions</label>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
 </body>
+
 </html>
